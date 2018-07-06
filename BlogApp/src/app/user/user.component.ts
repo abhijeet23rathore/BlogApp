@@ -33,6 +33,10 @@ export class UserComponent implements OnInit {
     });
   }
 
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+  
   getUsers(){
     this.friendsDisplay=false;
     this.userService.getUsers().subscribe(users => {

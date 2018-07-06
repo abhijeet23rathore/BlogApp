@@ -12,6 +12,8 @@ import { UserService } from './services/user.service';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material';
 import {MatPaginatorModule,MatToolbarModule} from '@angular/material';
+import {MatFormFieldModule} from '@angular/material';
+import {MatInputModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -28,7 +30,9 @@ import { HeaderComponent } from './header/header.component';
     MatButtonModule,
     MatTableModule,
     MatToolbarModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     UserService
